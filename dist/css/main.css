@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #674baf;
+  background-image: url("../../images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 top;
+}
+
+header {
+  margin: 1.8em 2.2em;
+}
+header .logo {
+  width: 40%;
+}
+
+main {
+  margin: 3.7em 2.2em;
+  text-align: center;
+}
+main .main-img {
+  width: 100%;
+}
+
+section {
+  margin-top: 3.8em;
+}
+section .main-title {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: 600;
+}
+section .main-text {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 1em auto;
+}
+section .main-btn {
+  text-decoration: none;
+  background-color: white;
+  color: #674baf;
+  font-family: "Poppins", sans-serif;
+  padding: 0.8em 6em;
+  font-size: 0.8rem;
+  border-radius: 30px;
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.411);
+  display: inline-block;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3.5em auto 1.5em auto;
+  gap: 10px;
+}
+.socials .icons {
+  color: white;
+  border: 0.5px white solid;
+  border-radius: 50%;
+  padding: 0.5em 0.6em;
+  display: inline-block;
+}
+.socials .icons:nth-child(1) {
+  padding: 0.5em 0.7em;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: #d5daee;
+  border-radius: 100%;
+}
+
+a:focus-visible {
+  outline: 2px solid #ee81ee;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background: url("../../images/bg-desktop.svg") no-repeat center center, #674baf;
+    background-size: cover;
+  }
+  body header {
+    margin-left: 5em;
+  }
+  body header .logo {
+    width: 15vw;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    text-align: left;
+    margin: 4em 5em 1em 5em;
+  }
+  main .main-title {
+    font-size: 2rem;
+    line-break: 3;
+    width: 70%;
+  }
+  main .main-text {
+    font-size: 1.25rem;
+    line-height: 35px;
+  }
+  main .main-btn:hover {
+    background-color: #e882e8;
+    color: white;
+  }
+
+  .socials {
+    justify-content: flex-end;
+    margin: 0 5em 1.5em 0;
+    gap: 15px;
+  }
+  .socials .icons:hover {
+    background-color: none;
+    color: #e882e8;
+    border-color: #e882e8;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
