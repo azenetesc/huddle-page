@@ -103,19 +103,21 @@ a:focus-visible {
   main {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 50px;
     text-align: left;
     margin: 5em 4em;
   }
   main .main-title {
-    font-size: 2rem;
-    line-break: 3;
-    width: 70%;
+    font-size: 2.5rem;
+    width: 80%;
   }
   main .main-text {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     line-height: 35px;
+  }
+  main .main-btn {
+    padding: 1em 5em;
+    font-size: 1em;
   }
   main .main-btn:hover {
     background-color: #e882e8;
