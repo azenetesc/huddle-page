@@ -10,6 +10,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0 top;
+  min-height: 100vh;
 }
 
 header {
@@ -87,7 +88,10 @@ a:focus-visible {
 
 @media screen and (min-width: 800px) {
   body {
-    background: url("../../images/bg-desktop.svg") no-repeat center center, #674baf;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../../images/bg-desktop.svg");
+    background-color: #674baf;
     background-size: cover;
   }
   body header {
